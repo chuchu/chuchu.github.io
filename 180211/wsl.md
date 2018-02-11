@@ -4,7 +4,7 @@ I never paid too much attention to the Windows Subsystem for Linux (WSL). But re
 
 The ability to support different subsystems was built into the Windows kernel long time ago. The first Windows NT version did support OS/2 console application for instance. Windows 10 can now run native Linux ELF64 binaries. It does this without emulation and without recompiling Linux code.
 
-The WSL consists of user mode and kernel mode components. In kernel mode there is a driver which translates Linux system calls to the Windows kernel. Sometimes there is a direct mapping, sometimes there is some extra work to do. 
+The WSL consists of user mode and kernel mode components. In kernel mode there is a driver which translates Linux system calls to the Windows kernel. Sometimes there is a direct mapping, sometimes there is some extra work to do.
 
 In user mode there is the pico process in which system calls are dispatched to this driver. This process is an outcome of the Drawbridge research prototype. A goal of this prototype was to decouple a Windows process from the underlying OS on which it is executed. This is tailor-made for running Linux applications on Windows 10. Although it was not designed for this.
 
