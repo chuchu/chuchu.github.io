@@ -7,7 +7,13 @@
   <link>https://chuchu.github.io/</link>
   
   <description>Blog</description>
-  
+
+  <item>
+    <title>RavenDB, Docker and F#</title>
+    <link>https://chuchu.github.io/180212/RavenDBDockerFSharp.html</link>
+    <description>Little F# application which connects to a RaveDB database.</description>
+  </item>
+
   <item>
     <title>Avoid subscribing to events in constructors</title>
     <link>https://chuchu.github.io/180212/CTorEvents.html</link>
