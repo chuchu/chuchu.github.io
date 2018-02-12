@@ -2,7 +2,7 @@
 
 While adopting a unit test I found a piece of code which looks pretty much like this one:
 
-```C#
+```csharp
 public Subscriber(Printer printer, string message)
 {
     printer.Print += OnPrint;
@@ -18,7 +18,7 @@ public Subscriber(Printer printer, string message)
 
 This is the constructor of a class called Subscriber. In the first statement it subscribes an external event. Afterwards it checks a message parameter and might throw an exception. The following question comes to my mind. What happens to the event when the exception is thrown? Is there some zombie object assigned to the Print multicast delegate? Indeed it is! When you have the following code:
 
-```C#
+```csharp
 var s = new Subscriber(printer, null);
 ```
 
