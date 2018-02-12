@@ -2,4 +2,7 @@
 
 ## 2018 February
 
-[Windows Subsystem for Linux](180211/wsl.md)
+* [Avoid subscribing to events in constructors](180212/CTorEvents)
+* [Windows Subsystem for Linux](180211/wsl)
+
+[![RSS](rss.gif)](rss.xml)

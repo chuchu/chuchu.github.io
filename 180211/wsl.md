@@ -11,3 +11,18 @@ The WSL consists of user mode and kernel mode components. In kernel mode there i
 In user mode there is the pico process in which system calls are dispatched to this driver. This process is an outcome of the [Drawbridge](https://www.microsoft.com/en-us/research/project/drawbridge/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fprojects%2Fdrawbridge%2F) research prototype. A goal of this prototype was to decouple a Windows process from the underlying OS on which it is executed. This is tailor-made for running Linux applications on Windows 10. Although it was not designed for this.
 
 To use WSL you need to active the Windows Feature “Windows-Subsystem for Linux”. This installs the basic functionality. When this is done you can install a distribution from the Microsoft Store. When I started Ubuntu the first time I saw the error message [“Unsupported console settings. In order to use this feature the legacy console must be disabled.“](http://www.winhelponline.com/blog/bash-does-not-start-unsupported-console-settings-windows-10/) constantly filling up the console window. The problem was that the legacy console was activated which is obviously incompatible to WSL.
+
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = "https://chuchu.github.io/180211/wsl.html";
+        this.page.identifier = "180211_wsl";
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://chuchuchuchu.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>If you want to comment, please enable JavaScript.</noscript>
