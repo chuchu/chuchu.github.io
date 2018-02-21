@@ -3,6 +3,6 @@
 ## 2018 February
 
 * [Secure Technical Implementation Guides](1802/AppDevSecSTIG)
-* [RavenDB, Docker and F#](180212/RavenDBDockerFSharp)
-* [Avoid subscribing to events in constructors](180212/CTorEvents)
-* [Windows Subsystem for Linux](180211/wsl)
+* [RavenDB, Docker and F#](1802/RavenDBDockerFSharp)
+* [Avoid subscribing to events in constructors](1802/CTorEvents)
+* [Windows Subsystem for Linux](1802/wsl)
