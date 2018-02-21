@@ -8,7 +8,7 @@ No matter if you want to deal with DoD or not when you want to deliver secure so
 
 Each entry contains a detailed description of the problem as well as an explanation what might be checked during the accreditation process. You might use this to validate your own application.
 
-When you have downloaded a STIG you can view it in the web browser of your choice or you can use the STIG Viewer [4]. The major benefit of the application is the possibility to create a checklist. In such a list you can mark rules as "violated" or "no finding". You can also adopt the severity to your needs
+When you have downloaded a STIG you can view it in the web browser of your choice or you can use the STIG Viewer [4]. The major benefit of this application is the possibility to create a checklist. In such a list you can mark rules as "violated" or "no finding". You can also adopt the severity to your needs
 
 ![STIG Viewer](STIGViewer.jpg)
 
