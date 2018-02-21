@@ -1,4 +1,4 @@
-# Secure technical implementation guides
+# Secure Technical Implementation Guides
 
 The awareness for cyber security increases not only since WannaCry last year. Especially companies which operate critical infrastructure are looking for certificates which are given to secure software products by trusted authorities. One of this authorities is the Department of Defense (DoD) which provides the Information Assurance Certification and Accreditation Process DIACAP [1].
 

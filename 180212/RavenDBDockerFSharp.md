@@ -84,18 +84,3 @@ docker run 388344c214f3
 ```
 
 You should see the same output as when the application was executed directly.
-
-<div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-        this.page.url = "https://chuchu.github.io/180212/RavenDBDockerFSharp.html";
-        this.page.identifier = "180212_RavenDBDockerFSharp";
-    };
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://chuchuchuchu.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>If you want to comment, please enable JavaScript.</noscript>
