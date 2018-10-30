@@ -10,5 +10,5 @@
 
 Revert own change in conflict state:
 
-```git checkout --theirs [filename]
-   git add [filename]```
+```git checkout --theirs [filename]```
+```git add [filename]```
