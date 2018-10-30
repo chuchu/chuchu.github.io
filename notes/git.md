@@ -10,5 +10,13 @@
 
 Revert own change in conflict state:
 
-```git checkout --theirs [filename]```
-```git add [filename]```
+```
+git checkout --theirs [filename]
+git add [filename]
+```
+
+Show all files which are changed in current branch, compared to master.
+
+```
+git diff --name-status master
+```
