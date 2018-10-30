@@ -5,3 +5,10 @@
 ### Show all branches
 
 ```$ git branch```
+
+### Merging
+
+Revert own change in conflict state:
+
+```git checkout --theirs [filename]
+   git add [filename]```
