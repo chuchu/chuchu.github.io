@@ -1,12 +1,28 @@
-### Create a new branch on the local machine and switch to it
+### Push / Pull
 
-```$ git checkout -b [name_of_your_new_branch]```
+Push a local branch to remote for pull request
 
-### Show all branches
+```git push -u origin <branch>```
+
+### Branching
+
+Show all branches
 
 ```$ git branch```
 
+Create a new branch on the local machine and switch to it
+
+```$ git checkout -b <branch>```
+
 ### Merging
+
+Get updated from master:
+
+```
+git checkout master
+git checkout <branch>
+git merge master
+```
 
 Revert own change in conflict state:
 
