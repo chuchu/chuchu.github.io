@@ -14,4 +14,9 @@ Metrics have now the great advantage that they can give you an overview of the c
 
 Traces, logs and metrics are not fundamentally different. They provide different views on the same underlying data. Metrics give you an overview and should always be available. When you spot something suspicious you can investigate the logs. If still in doubt you can enable tracing. 
 
-There are great tools on the market. For metrics my favorite is Prometheus for the aggregation and Grafana for the visualization. For logging I can suggest Serilog. Jeager is a good tool for distributed tracing. 
+There are great tools on the market. For metrics my favorite is [Prometheus] [1] for the aggregation and [Grafana][2] for the visualization. For logging I can suggest [Serilog][3]. [Jeager][4] is a good tool for distributed tracing.
+
+[1] https://prometheus.io/
+[2] https://grafana.com/
+[3] https://serilog.net/
+[4] https://www.jaegertracing.io/
