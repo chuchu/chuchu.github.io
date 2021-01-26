@@ -1,5 +1,9 @@
 # Blog
 
+## 2021 January
+
+* [Monitoring](2021/Monitoring)
+
 ## 2018 February
 
 * [Secure Technical Implementation Guides](1802/AppDevSecSTIG)
