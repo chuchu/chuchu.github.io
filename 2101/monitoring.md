@@ -16,7 +16,7 @@ Traces, logs and metrics are not fundamentally different. They provide different
 
 There are great tools on the market. For metrics my favorite is [Prometheus] [1] for the aggregation and [Grafana][2] for the visualization. For logging I can suggest [Serilog][3]. [Jeager][4] is a good tool for distributed tracing.
 
-[1] https://prometheus.io/
-[2] https://grafana.com/
-[3] https://serilog.net/
-[4] https://www.jaegertracing.io/
+[1]: https://prometheus.io/
+[2]: https://grafana.com/
+[3]: https://serilog.net/
+[4]: https://www.jaegertracing.io/
