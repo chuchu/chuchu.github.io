@@ -24,7 +24,7 @@ In the following example only the process with the PID 29370 is sampled:
 perf top -p 29370
 ```
 
-The above examples snapshot shows that the main method consumes the most CPU.
+The above example snapshot shows that the main method consumes the most CPU.
 Looking at the code this can't be true.
 
 ```go
@@ -67,7 +67,7 @@ Now the `perf` output makes more sense.
 
 ![image](perftop2.png)
 
-It shows also that `cpuBurn2` consumes more CPU that `cpuBurn1`. Unfortunately 
+It shows also that `cpuBurn2` consumes more CPU than `cpuBurn1`. Unfortunately 
 during an on-site analysis we don't have these options.
 
 ## Hints
