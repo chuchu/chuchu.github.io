@@ -8,7 +8,7 @@ A tool which is similar to `top` is `perf top`. Instead of processes it shows fu
 
 When `perf top` is executed, it displays a table with three columns: Overhead, Shared Object, and Symbol.  The Overhead column shows the percentage of total samples that occurred in a given function. Because sampling is statistical, a function may still appear even after it has finished executing, as long as enough samples were captured while it was running.
 
-Here is a small example where main method of my busygo application consume most CPU.
+Here is a small example where the main method of my busygo application consume most CPU.
 
 ![image](perftop.png)
 
@@ -23,6 +23,53 @@ In the following example only the process with the PID 29370 is sampled:
 ```sh
 perf top -p 29370
 ```
+
+The above examples snapshot shows that the main method consumes the most CPU.
+Looking at the code this can't be true.
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func cpuBurn1(iterationsCount int) {
+	var result float64
+	for i := 0; i < iterationsCount; i++ {
+		result += float64(i) * float64(i) / float64(i+1)
+	}
+}
+
+func cpuBurn2(iterationsCount int) {
+	var result float64
+	for i := 0; i < iterationsCount; i++ {
+		result += float64(i) * float64(i) / float64(i+2)
+	}
+}
+
+func main() {
+	fmt.Println("Starting endless loop.")
+	for true {
+		cpuBurn1(100000)
+		cpuBurn2(200000)
+	}
+}
+```
+
+The problem is that the compiler inlines the function. This means that he replaces the function call with the actual code. So `perf` is right. It is possible to disable inlining during compilation using the `-l` compiler switch.
+
+```bash
+go build -gcflags '-l' .
+```
+
+Now the `perf` output makes more sense.
+
+![image](perftop2.png)
+
+It shows also that `cpuBurn2` consumes more CPU that `cpuBurn1`. Unfortunately 
+during an on-site analysis we don't have these options.
+
 ## Hints
 
 - In most cases, `perf top` should be executed as root using `sudo`, otherwise important samples may be missing.
