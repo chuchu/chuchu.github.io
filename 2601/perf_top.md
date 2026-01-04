@@ -1,3 +1,5 @@
+# perf top
+
 Sometimes you might wonder why your system shows high CPU usage. While tools like `top` or `htop` can tell you which process is consuming CPU time, it is often difficult to see what the process is actually doing. However, this information is vital if you want to diagnose the problem and provide a fix.
 
 A tool which is similar to `top` is `perf top`. Instead of processes it shows functions, typically sorted by there CPU consumption.
