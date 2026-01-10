@@ -1,6 +1,6 @@
-# Convert kindle clippings to markdown
+# Convert Kindle clippings to markdown
 
-From time to time I copy the clippings file from my two kindles (one scribe and an ordinary one). To utilize them, I thought it would be a good idea to join them, remove duplicate entries, and convert them into the markdown format.
+From time to time I copy the clippings file from my two Kindles (one scribe and an ordinary one). I thought it would be a good idea to join them, remove duplicate entries, and convert them into the markdown format.
 
 This calls for a little go program. While checking the format I stumbled over a quote from the "Software Engineering at Google" book.
 
@@ -8,7 +8,7 @@ This calls for a little go program. While checking the format I stumbled over a 
 
 OK, no go program. I already googled in the past for tools which can processes these clippings files. I could not find one which seems to do what I want. But starting from scratch is also not the best idea. So why not use `awk`. This is a scripting language especially created for text processing. It is named after its creators `Aho`, `Weinberger` and `Kernighan`. 
 
-A clipping file (from a German kindle) looks like this:
+A clipping file (from a German Kindle) looks like this:
 
 ```
 Software Engineering at Google (Titus Winters)
