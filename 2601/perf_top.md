@@ -75,3 +75,5 @@ during an on-site analysis we don't have these options.
 - In most cases, `perf top` should be executed as root using `sudo`, otherwise important samples may be missing.
 - A program executed with `go run` does not contain symbols. That's why `perf top` does not show names. Same is true for an ordinary dot net application.
 - In Ubuntu `perf` is broken with kernel version `6.14.0-24`. See this bug [here](https://bugs.launchpad.net/ubuntu/+source/linux-hwe-6.14/+bug/2117159). As a workaround one can use `perf` from another kernel version. For instance from here `/usr/lib/linux-tools/6.5.0-10043-tuxedo`.
+
+**[back](../index.md)**

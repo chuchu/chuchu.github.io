@@ -110,3 +110,5 @@ awk -f csv2markdown.awk > clippings2.md # Create the markdow and save to a file.
 Please note that it is important to call `sort` before `uniq`, because `uniq` only removes subsequent duplicates. I sort for the book title first following by the page number. This produces a markdown file where each book title is a heading, following by the different quotes.
 
 Maybe these scripts are still are still a bit wrong or clumsy, but it was quite fast to achieve my goal. Much faster than writing it in `go`.
+
+**[back](../index.md)**
